@@ -25,6 +25,11 @@ app.use('/api/user', userRouter)
 
 app.use('/api/auth', authRouter)
 
+app.use(express.static(path.join(__dirname, '/client/dist')))
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
+})
+
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500
     const message = err.message || 'Error en el servidor...'
