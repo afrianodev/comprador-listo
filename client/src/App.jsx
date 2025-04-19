@@ -26,7 +26,7 @@ export default function App() {
           <Route path='/publicar-comprador' element={<PublicarComprador />} />
         </Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   )
 }

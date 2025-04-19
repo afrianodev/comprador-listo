@@ -11,8 +11,8 @@ export default function Footer() {
   return (
     <footer className='bg-slate-200' style={{ boxShadow: '0px -4px 4px rgba(0, 0, 0, 0.1)' }}>
         <div className='flex flex-col mx-auto pt-6'>
-            <div className='flex justify-between items-start w-[90%] mx-auto'>
-                <div>
+            <div className='flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between items-start w-[90%] mx-auto'>
+                <div className='hidden sm:inline'>
                     <h2 className='text-slate-600 font-bold text-xl cursor-pointer'>Comprador<span className='text-zinc-900'>Listo</span></h2>
                     <div className='mt-2'>
                         <h2 className='font-semibold text-zinc-900 mb-2'>Newsletter</h2>
@@ -25,7 +25,7 @@ export default function Footer() {
                         </form>
                     </div>
                 </div>
-                <div className='text-slate-700 flex flex-col gap-2 text-sm font-semibold'>
+                <div className='text-slate-700 flex flex-row sm:flex-col gap-2 text-sm font-semibold'>
                     <p className='select-none cursor-pointer hover:text-slate-500 hover:underline'>Sobre nosotros</p>
                     <p className='select-none cursor-pointer hover:text-slate-500 hover:underline'>Preguntas frecuentes</p>
                     <p className='select-none cursor-pointer hover:text-slate-500 hover:underline'>Terminos y condiciones</p>
