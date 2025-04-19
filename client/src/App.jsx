@@ -12,7 +12,7 @@ import CreateListing from './pages/CreateListing'
 import PublicarComprador from './pages/PublicarComprador'
 
 export default function App() {
-  return (
+   return (
     <BrowserRouter>
       <Header />
       <Routes>
@@ -26,7 +26,7 @@ export default function App() {
           <Route path='/publicar-comprador' element={<PublicarComprador />} />
         </Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   )
 }

@@ -51,7 +51,7 @@ export default function SignIn() {
   }
   console.log(formData)
   return (
-    <div className='flex flex-col max-w-lg mx-auto h-[90vh] justify-center'>
+    <div className='flex flex-col max-w-lg mx-auto h-[90vh] justify-center p-4'>
       <h1 className='text-center text-4xl font-bold text-zinc-900 mb-6'>Iniciar sesión</h1>
       <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
         {/* Username Field */}
